@@ -10,6 +10,7 @@ import retrofit2.http.GET;
  * author : wilfried
  * email : p_maoqwu@tencent.com
  * date : 2019/8/3 16:54
+ * author : wilfried
  */
 public interface Request {
     @GET(value = "banner/json")
