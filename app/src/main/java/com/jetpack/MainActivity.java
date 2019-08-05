@@ -11,7 +11,12 @@ import android.widget.TextView;
 
 import com.jetpack.bean.User;
 import com.jetpack.viewmodel.UserViewModel;
-
+/**
+ * description ： TODO:
+ * author : wilfried
+ * email : p_maoqwu@tencent.com
+ * date : 2019/8/3 16:01
+ */
 public class MainActivity extends AppCompatActivity {
 
     private UserViewModel userViewModel;
@@ -35,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void TextClick(View view) {
+    public void testClick(View view) {
 
         userViewModel.loadInfo();
     }

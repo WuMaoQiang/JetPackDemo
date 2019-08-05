@@ -22,6 +22,7 @@ public class UserModel {
     //
     private static Request request = null;
     private static Retrofit retrofit;
+    private static Observable<User> observable;
 
     public UserModel() {
         retrofit = new Retrofit.Builder()
@@ -34,7 +35,7 @@ public class UserModel {
     }
 
     public static Observable getInfo() {
-        Observable<User> observable = request.getBanner().observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io());
+        observable = request.getBanner().observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io());
         return observable;
     }
 

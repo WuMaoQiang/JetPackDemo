@@ -18,7 +18,6 @@ import io.reactivex.functions.Consumer;
 public class UserViewModel extends ViewModel {
     private static UserViewModel userViewModel;
     MutableLiveData<User> userMutableLiveData = new MutableLiveData<>();
-    UserModel model = new UserModel();
 
     public static UserViewModel getInstance() {
         if (userViewModel == null) {
@@ -39,7 +38,7 @@ public class UserViewModel extends ViewModel {
     @SuppressLint("CheckResult")
     public void loadInfo() {
 
-        model.getInfo().subscribe(new Consumer<User>() {
+        UserModel.getInfo().subscribe(new Consumer<User>() {
             @Override
             public void accept(User user) throws Exception {
                 setUsetableLiveData(user);
