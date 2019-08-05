@@ -25,11 +25,13 @@ android {
             applicationId "com.ycl.edition1"
 //            versionCode 1
 //            versionName "1.0.0"
+            buildConfigField "String", "VENDER", "\"product1\""
         }
         product2 {
             applicationId "com.ycl.edition2"
 //            versionCode 1
 //            versionName "1.0.0"
+            buildConfigField "String", "VENDER", "\"product2\""
 
         }
     }

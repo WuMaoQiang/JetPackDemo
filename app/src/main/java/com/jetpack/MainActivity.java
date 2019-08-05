@@ -5,6 +5,7 @@ import android.arch.lifecycle.Observer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-
+        Log.i("xiaoqiang", "onCreate: " + BuildConfig.VENDER);
         userViewModel = UserViewModel.getInstance();
         userMutableLiveData = userViewModel.getUserMutableLiveData();
 
