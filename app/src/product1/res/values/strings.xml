@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="test">点我请求数据111</string>
+
+</resources>
