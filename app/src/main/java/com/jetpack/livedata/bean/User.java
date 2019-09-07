@@ -1,4 +1,4 @@
-package com.jetpack.bean;
+package com.jetpack.livedata.bean;
 
 import java.util.List;
 

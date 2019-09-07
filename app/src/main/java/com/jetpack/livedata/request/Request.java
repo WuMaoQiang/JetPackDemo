@@ -1,6 +1,6 @@
-package com.jetpack.request;
+package com.jetpack.livedata.request;
 
-import com.jetpack.bean.User;
+import com.jetpack.livedata.bean.User;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
